@@ -71,6 +71,6 @@ fi
 
 %files
 %defattr(644,root,root,755)
-%doc CREDITS
+%doc README CREDITS LICENSE
 %config(noreplace) %verify(not md5 mtime size) %{php_sysconfdir}/conf.d/%{modname}.ini
 %attr(755,root,root) %{php_extensiondir}/%{modname}.so
