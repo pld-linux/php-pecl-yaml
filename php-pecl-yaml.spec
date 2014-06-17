@@ -15,7 +15,9 @@ Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 URL:		http://pecl.php.net/package/yaml/
 %{?with_tests:BuildRequires:    %{php_name}-cli}
 BuildRequires:	%{php_name}-devel >= 4:5.2.0
+BuildRequires:	re2c
 BuildRequires:	rpmbuild(macros) >= 1.666
+BuildRequires:	yaml-devel
 %{?requires_php_extension}
 Provides:	php(yaml) = %{version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
